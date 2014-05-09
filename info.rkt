@@ -1,8 +1,9 @@
 #lang setup/infotab
 
-(define deps '("base" #;"parser-tools-lib" #;"rackunit-lib"))
-(define build-deps '(#;"at-exp-lib" #;"parser-tools-doc"
-                                    #;"racket-doc"
-                     #;"scribble-lib"))
+(define deps '("base"  "rackunit-lib" "data-lib" "while-loop"))
+(define build-deps '("at-exp-lib" "parser-tools-doc"
+                                  "racket-doc"
+                                  "scribble-lib"))
+
 (define collection 'multi)
 

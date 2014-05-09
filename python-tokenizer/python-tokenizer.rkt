@@ -41,7 +41,7 @@
          racket/set
          data/gvector
          (for-syntax racket/base)
-         (planet dyoo/while-loop))
+         dyoo-while-loop)
 
 (provide generate-tokens
          (struct-out exn:fail:token)
