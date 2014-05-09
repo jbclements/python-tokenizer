@@ -1,8 +1,6 @@
 #lang scribble/manual
-@(require planet/scribble
-          scribble/eval
-          (for-label (this-package-in main)
-                     racket/base
+@(require scribble/eval
+          (for-label racket/base
                      racket/sequence))
 
 @(define myeval (make-base-eval))
@@ -31,7 +29,7 @@ For example:
 ]
 
 @section{API}
-@defmodule/this-package[main]
+@defmodule[python-tokenizer]
 
 @defproc[(generate-tokens [inp input-port]) (sequenceof (list/c symbol? string? (list/c number? number?) (list/c number? number?) string?))]{
 Consumes an input port and produces a sequence of tokens.
