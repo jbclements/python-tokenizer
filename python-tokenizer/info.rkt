@@ -5,7 +5,7 @@
 (define required-core-version "5.1.1")
 (define version "1.1")
 (define repositories '("4.x"))
-(define scribblings '(("manual.scrbl")))
+(define scribblings '(("python-tokenizer.scrbl")))
 (define primary-file "main.rkt")
 (define blurb 
   '("python-tokenizer: a translation of Python's @tt{tokenize.py} library for Racket"))
