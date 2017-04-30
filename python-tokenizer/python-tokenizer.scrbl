@@ -20,7 +20,7 @@ and produces a sequence of tokens.
 For example:
 
 @interaction[#:eval myeval
-(require (planet dyoo/python-tokenizer))
+(require python-tokenizer)
 (define sample-input (open-input-string "def d22(a, b, c=2, d=2, *k): pass"))
 (define tokens 
   (generate-tokens sample-input))
@@ -93,7 +93,7 @@ The translation is a fairly direct one; I wrote an
 @link["https://github.com/dyoo/while-loop"]{auxiliary package} to deal
 with the @racket[while] loops, which proved invaluable during the
 translation of the code.  It may be instructive to compare the
-@link["https://github.com/dyoo/python-tokenizer/blob/master/python-tokenizer.rkt"]{source}
+@link["https://github.com/jbclements/python-tokenizer/blob/master/python-tokenizer/python-tokenizer.rkt"]{source}
 here to that of
 @link["http://hg.python.org/cpython/file/2.7/Lib/tokenize.py"]{tokenize.py}.
 
